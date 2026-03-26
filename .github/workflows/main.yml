@@ -1,0 +1,24 @@
+name: User Dashboard
+
+on:
+  push:
+    branches:
+      - 'user-dashboard'
+  pull_request:
+    branches:
+      - 'user-dashboard'
+  push:
+    branches:
+      - 'user-dashboard'
+  pull_request:
+    branches:
+      - 'user-dashboard'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Run echo
+        run: echo "Hello from GitHub Actions!"
